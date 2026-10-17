@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPA Advanced Master Course — From Zero to Advanced CPA Marketing</title>
+<meta name="description" content="CPA Advanced Master Course: 28 modules covering CPA marketing from fundamentals to scaling. Instant-download PDF guide, $20.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --bg:#070b1a; --bg2:#0c1230; --card:#101a3d; --card2:#0d1533;
+    --gold:#f5b301; --gold2:#ff8a00;
+    --text:#f2f4ff; --muted:#a9b4dc; --line:#22306b;
+  }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Segoe UI',system-ui,Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+  h1,h2,h3 { font-weight:800; letter-spacing:-.4px; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+
+  header.hero { position:relative; text-align:center; padding:80px 0 64px; overflow:hidden;
+    background:radial-gradient(900px 480px at 50% -8%, #2a3a7d 0%, rgba(42,58,125,0) 60%), var(--bg); }
+  .badge { display:inline-block; background:rgba(245,179,1,.1); color:var(--gold); border:1px solid rgba(245,179,1,.45); padding:9px 24px; border-radius:30px; font-size:14px; font-weight:700; margin-bottom:24px; letter-spacing:.4px; }
+  header.hero h1 { font-size:50px; line-height:1.25; margin-bottom:18px; }
+  header.hero h1 .hl { background:linear-gradient(120deg,#ffd166,var(--gold) 40%,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  header.hero .sub { font-size:19px; color:var(--muted); max-width:700px; margin:0 auto 30px; }
+  .buy-wrap { margin:26px 0 10px; text-align:center; }
+  .buy-wrap a { display:inline-block; transition:transform .15s; }
+  .buy-wrap a:hover { transform:scale(1.04); }
+  .secure-line { font-size:13px; color:var(--muted); margin-top:10px; }
+
+  .hero-stats { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:36px 0 8px; }
+  .stat { background:rgba(16,26,61,.75); border:1px solid var(--line); border-radius:16px; padding:20px 32px; min-width:158px; }
+  .stat b { display:block; font-size:32px; background:linear-gradient(135deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .stat span { font-size:14px; color:var(--muted); }
+
+  section { padding:70px 0; }
+  section.alt { background:linear-gradient(180deg,var(--bg2),#0a0f28); }
+  .eyebrow { text-align:center; color:var(--gold); font-weight:700; font-size:13px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px; }
+  h2.sec { font-size:36px; text-align:center; margin-bottom:12px; }
+  h2.sec .hl { background:linear-gradient(120deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  p.lead { text-align:center; color:var(--muted); max-width:700px; margin:0 auto 40px; font-size:17px; }
+  .sec-div { width:72px; height:4px; border-radius:4px; margin:0 auto 40px; background:linear-gradient(90deg,var(--gold),var(--gold2)); }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+  .card { background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:18px; padding:28px 24px; transition:transform .2s, border-color .2s; }
+  .card:hover { transform:translateY(-5px); border-color:rgba(245,179,1,.55); }
+  .card .ico { font-size:36px; margin-bottom:12px; }
+  .card h3 { font-size:19px; margin-bottom:8px; color:#fff; }
+  .card p { font-size:15px; color:var(--muted); }
+
+  .phase { background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:20px; padding:30px; margin-bottom:20px; }
+  .phase .pnum { display:inline-block; background:linear-gradient(135deg,var(--gold),var(--gold2)); color:#141414; font-weight:800; font-size:13px; padding:7px 18px; border-radius:20px; margin-bottom:12px; letter-spacing:1px; }
+  .phase h3 { font-size:24px; margin-bottom:6px; }
+  .phase p.pdesc { color:var(--muted); font-size:15px; }
+  .phase ul { list-style:none; display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+  .phase ul li { background:#0b1330; border:1px solid var(--line); padding:9px 18px; border-radius:20px; font-size:14px; color:#cdd6f7; }
+
+  .inside { max-width:860px; margin:0 auto; display:grid; gap:14px; }
+  .inside .in { display:flex; gap:16px; background:linear-gradient(160deg,#0e1734,#0b1229); border:1px solid #22306b; border-radius:14px; padding:20px 22px; align-items:flex-start; }
+  .inside .in .tick { font-size:24px; line-height:1.2; }
+  .inside .in b { color:#fff; font-size:16px; }
+  .inside .in p { margin:4px 0 0; color:#9aa6d4; font-size:14px; }
+
+  .mentor { display:flex; gap:28px; align-items:center; background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:22px; padding:36px; flex-wrap:wrap; max-width:860px; margin:0 auto; }
+  .mentor h3 { font-size:26px; letter-spacing:.5px; }
+  .mentor .role { background:linear-gradient(135deg,var(--gold),var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; font-weight:700; margin-bottom:10px; font-size:17px; }
+  .mentor p { color:var(--muted); font-size:15px; }
+
+  .price-card { background:linear-gradient(165deg,#131e4a,#0c1330); border:2px solid var(--gold); border-radius:24px; padding:44px 32px 40px; text-align:center; position:relative; max-width:520px; margin:0 auto; box-shadow:0 0 60px rgba(245,179,1,.15), 0 24px 60px rgba(0,0,0,.5); }
+  .price-card .tag { position:absolute; top:14px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--gold),var(--gold2)); color:#141414; font-weight:800; font-size:13px; padding:8px 24px; border-radius:20px; white-space:nowrap; }
+  .price-card h3 { font-size:23px; margin:16px 0 6px; }
+  .price-card .old { text-decoration:line-through; color:var(--muted); font-size:19px; }
+  .price-card .now { font-size:56px; font-weight:800; margin:6px 0; background:linear-gradient(135deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .price-card .per { color:var(--muted); font-size:14px; margin-bottom:18px; }
+  .price-feats { text-align:left; max-width:380px; margin:0 auto 22px; color:#cdd6f7; font-size:15px; }
+  .price-feats li { margin:8px 0 8px 18px; }
+
+  details.faq { background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:14px; padding:20px 24px; margin-bottom:14px; max-width:780px; margin-left:auto; margin-right:auto; }
+  details.faq summary { font-weight:700; cursor:pointer; font-size:17px; list-style:none; }
+  details.faq summary::-webkit-details-marker { display:none; }
+  details.faq p { margin-top:12px; color:var(--muted); font-size:15px; }
+
+  .support-box { text-align:center; background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:18px; padding:32px; max-width:640px; margin:0 auto; }
+  .support-box a { color:var(--gold); font-weight:700; font-size:18px; }
+
+  footer { background:#05081a; padding:44px 0 40px; border-top:1px solid #141c3d; }
+  footer .jvzoo-disclaimer { max-width:860px; margin:0 auto 20px; padding:0 20px; color:#8f9ccb; font-size:14px; line-height:1.8; text-align:left; }
+  footer .copy { text-align:center; color:#6f7aa5; font-size:13px; }
+
+  @media(max-width:640px){
+    header.hero h1{font-size:32px} h2.sec{font-size:27px} .price-card .now{font-size:46px}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">⭐ BESTSELLER — 28-MODULE CPA TRAINING</div>
+    <h1>Learn CPA Marketing<br><span class="hl">From Zero to Advanced</span></h1>
+    <p class="sub">The complete <b>CPA Advanced Master Course</b> as an instant-download PDF guide — from CPA fundamentals to offer research, landing pages, Facebook marketing, tracking, retargeting and scaling. Step by step, fully practical.</p>
+    <div class="buy-wrap">
+      <a href="https://www.jvzoo.com/b/0/458063/1"><img src="https://i.jvzoo.com/0/458063/1" alt="CPA Advanced Master Course" border="0" /></a>
+      <div class="secure-line">🔒 Secure checkout via JVZoo · Instant PDF download · 30-day money-back guarantee</div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>28</b><span>Structured Modules</span></div>
+      <div class="stat"><b>📕</b><span>Instant PDF Download</span></div>
+      <div class="stat"><b>4</b><span>Learning Phases</span></div>
+      <div class="stat"><b>12</b><span>CPA Networks Covered</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What's Inside the Guide</div>
+    <h2 class="sec">📕 Everything You Get in <span class="hl">One PDF</span></h2>
+    <p class="lead">The full 28-module course — packed into one complete, instant-download guide you keep forever.</p>
+    <div class="inside">
+      <div class="in"><span class="tick">✅</span><div><b>Complete 28-module course in PDF format</b><p>All 4 phases — Foundation, Build, Optimize, Scale — from CPA basics to offer research, landing pages, tracking and scaling, explained step by step.</p></div></div>
+      <div class="in"><span class="tick">✅</span><div><b>Practical workflows, not just theory</b><p>How to pick offers, set up domain &amp; hosting, build landing pages, run Facebook/TikTok/YouTube campaigns, track with CTR/CPC/CVR/CPA/EPC/ROI, and retarget visitors.</p></div></div>
+      <div class="in"><span class="tick">✅</span><div><b>Top CPA networks covered</b><p>Hands-on guidance for MaxBounty, ClickDealer, PerformCB, AdBlueMedia, OGAds, CPAlead and more — how each works and how to choose offers.</p></div></div>
+      <div class="in"><span class="tick">✅</span><div><b>Read on any device, yours to keep</b><p>Phone, tablet or computer — learn at your own pace, anytime, with no expiry.</p></div></div>
+      <div class="in"><span class="tick">✅</span><div><b>Instant delivery after payment</b><p>Complete your purchase securely through JVZoo and download the PDF immediately.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">What You'll Master</div>
+    <h2 class="sec">Why This <span class="hl">Course?</span></h2>
+    <p class="lead">Not just theory — every key topic is taught with a practical workflow you can follow.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">◎</div><h3>CPA Fundamentals</h3><p>CPA ecosystem, networks, offers, GEOs, traffic &amp; conversion — from the ground up.</p></div>
+      <div class="card"><div class="ico">📘</div><h3>Facebook Marketing</h3><p>Ads, audience targeting, creative testing, tracking &amp; retargeting.</p></div>
+      <div class="card"><div class="ico">🌐</div><h3>Domain &amp; Hosting</h3><p>Domain, DNS, SSL, hosting setup — get your own website live.</p></div>
+      <div class="card"><div class="ico">▣</div><h3>Landing Pages</h3><p>Conversion-focused design, mobile UX, copywriting &amp; CTAs.</p></div>
+      <div class="card"><div class="ico">📊</div><h3>Tracking &amp; Analytics</h3><p>CTR, CPC, CVR, CPA, EPC, ROI — make data-driven decisions.</p></div>
+      <div class="card"><div class="ico">🎯</div><h3>Retargeting &amp; Scaling</h3><p>Visitor-based funnels and data-driven scaling systems.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Step-by-Step Roadmap</div>
+    <h2 class="sec">Full <span class="hl">Curriculum</span></h2>
+    <p class="lead">28 modules across 4 phases — a structured learning journey from beginner to advanced.</p>
+    <div class="phase"><span class="pnum">PHASE 01 — FOUNDATION</span><h3>Build Your Foundation</h3><p class="pdesc">Understand the entire CPA ecosystem from the ground up</p>
+      <ul><li>Digital Marketing Basics</li><li>CPA Marketing Basics</li><li>Complete CPA Workflow</li><li>CPA Networks</li><li>Offer Selection</li><li>Content Channels</li><li>Compliance Basics</li></ul></div>
+    <div class="phase"><span class="pnum">PHASE 02 — BUILD</span><h3>Build Your System</h3><p class="pdesc">Create your own website, landing pages and content channels</p>
+      <ul><li>Domain &amp; Hosting</li><li>Landing Page Creation</li><li>Content &amp; Copywriting</li><li>SEO Fundamentals</li><li>TikTok Marketing</li><li>YouTube Marketing</li><li>Email List Building</li></ul></div>
+    <div class="phase"><span class="pnum">PHASE 03 — OPTIMIZE</span><h3>Traffic &amp; Optimization</h3><p class="pdesc">Run paid and organic traffic, optimize with real data</p>
+      <ul><li>Facebook Marketing</li><li>Facebook Ads</li><li>Paid Traffic Basics</li><li>Tracking &amp; Analytics</li><li>CRO &amp; A/B Testing</li><li>Retargeting Funnel</li><li>Campaign Optimization</li></ul></div>
+    <div class="phase"><span class="pnum">PHASE 04 — SCALE</span><h3>Scale &amp; Grow</h3><p class="pdesc">Find winners, scale them, and systematize your workflow</p>
+      <ul><li>Scaling Strategies</li><li>Advanced Funnels</li><li>Email Marketing</li><li>Profitability Analysis</li><li>Automation Basics</li><li>Final Project</li><li>Next Steps</li></ul></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Meet Your Mentor</div>
+    <h2 class="sec">Your <span class="hl">Mentor</span></h2>
+    <p class="lead">Learn from an experienced digital marketer</p>
+    <div class="mentor">
+      <div><h3>KHORSHED ALAM</h3><div class="role">Marketing Manager</div>
+      <p>Experienced in Digital Marketing, SEO, SEM, Social Media, Content Marketing, Analytics and Campaign Strategy. Teaches with a structured roadmap — step by step — so beginners can learn practical skills and move forward with confidence.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">Limited Time Offer</div>
+    <h2 class="sec">Get <span class="hl">Instant Access</span></h2>
+    <p class="lead">One payment. Yours forever. Instant download.</p>
+    <div class="price-card">
+      <div class="tag">⭐ COMPLETE COURSE</div>
+      <h3>CPA Advanced Master Course</h3>
+      <div class="old">$40</div><div class="now">$20</div>
+      <div class="per">50% OFF — one-time payment<br>No subscription · No hidden fees</div>
+      <ul class="price-feats">
+        <li>📕 Complete 28-module PDF guide</li>
+        <li>⚡ Instant download after payment</li>
+        <li>📱 Read on any device</li>
+        <li>🔄 Free lifetime updates</li>
+        <li>🛡️ 30-day money-back guarantee</li>
+      </ul>
+      <div class="buy-wrap">
+        <a href="https://www.jvzoo.com/b/0/458063/1"><img src="https://i.jvzoo.com/0/458063/1" alt="CPA Advanced Master Course" border="0" /></a>
+        <div class="secure-line">🔒 Secure checkout via JVZoo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Have Questions?</div>
+    <h2 class="sec">Frequently Asked <span class="hl">Questions</span></h2>
+    <div class="sec-div"></div>
+    <details class="faq"><summary>I'm a complete beginner. Is this course for me?</summary><p>Yes. The curriculum starts from the foundations and moves step by step toward advanced topics and a practical final project.</p></details>
+    <details class="faq"><summary>What will I learn?</summary><p>Alongside CPA marketing: domains, hosting, landing pages, Facebook, TikTok, YouTube, SEO, paid traffic, tracking, analytics, CRO, retargeting and scaling.</p></details>
+    <details class="faq"><summary>How do I receive the course?</summary><p>It's a PDF guide. After your secure purchase through JVZoo, you get an instant download link.</p></details>
+    <details class="faq"><summary>Will I earn money after taking this course?</summary><p>No legitimate course can guarantee specific income. Your results depend on your execution, traffic costs, the offers you promote, GEOs, and platform rules.</p></details>
+    <details class="faq"><summary>What if the course isn't for me?</summary><p>You're covered by a 30-day money-back guarantee. Contact support at samratkhanov@gmail.com for help.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Need Help?</div>
+    <h2 class="sec">Contact <span class="hl">Support</span></h2>
+    <p class="lead">Questions about the course or your order? Reach out anytime.</p>
+    <div class="support-box">
+      <p style="color:var(--muted); margin-bottom:8px;">📧 Email support</p>
+      <a href="mailto:samratkhanov@gmail.com">samratkhanov@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="jvzoo-disclaimer">
+    <strong>Disclaimer:</strong> Please note that this product does not provide any guarantee of income or success. The results achieved by the product owner or any other individuals mentioned are not indicative of future success or earnings. This website is not affiliated with FaceBook or any of its associated entities. Once you navigate away from FaceBook, the responsibility for the content and its usage lies solely with the user. All content on this website, including but not limited to text, images, and multimedia, is protected by copyright law and the Digital Millennium Copyright Act. Unauthorized copying, duplication, modification, or theft, whether intentional or unintentional, is strictly prohibited. Violators will be prosecuted to the fullest extent of the law. We want to clarify that JVZoo serves as the retailer for the products featured on this site. JVZoo® is a registered trademark of BBC Systems Inc., a Florida corporation located at 1809 E. Broadway Street, Suite 125, Oviedo, FL 32765, USA, and is used with permission. The role of JVZoo as a retailer does not constitute an endorsement, approval, or review of these products or any claims, statements, or opinions used in their promotion.
+  </div>
+  <p class="copy">© 2026 CPA Advanced Master Course. All rights reserved.</p>
+</footer>
+
+<img src='https://i.jvzoo.com/0/458063/99' alt="CPA Advanced Master Course" border="0" width='1' height='1' />
+</body>
+</html>
