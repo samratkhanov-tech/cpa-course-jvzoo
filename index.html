@@ -33,6 +33,14 @@
   .stat b { display:block; font-size:32px; background:linear-gradient(135deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
   .stat span { font-size:14px; color:var(--muted); }
 
+  .hero-cover { margin:30px auto 6px; max-width:400px; }
+  .hero-cover img { width:100%; height:auto; border-radius:18px; display:block;
+    box-shadow:0 24px 70px rgba(0,0,0,.55), 0 0 0 1px rgba(245,179,1,.35), 0 0 60px rgba(245,179,1,.18); }
+  .results-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; max-width:900px; margin:0 auto; }
+  .result-shot { background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:16px; padding:14px; }
+  .result-shot img { width:100%; height:auto; border-radius:10px; display:block; }
+  .result-shot figcaption { text-align:center; color:var(--muted); font-size:13px; margin-top:10px; }
+
   section { padding:70px 0; }
   section.alt { background:linear-gradient(180deg,var(--bg2),#0a0f28); }
   .eyebrow { text-align:center; color:var(--gold); font-weight:700; font-size:13px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px; }
@@ -89,7 +97,7 @@
 
   @media(max-width:640px){
     header.hero h1{font-size:32px} h2.sec{font-size:27px} .price-card .now{font-size:46px}
-    section{padding:52px 0}
+    section{padding:52px 0} .hero-cover{max-width:300px}
   }
 </style>
 </head>
@@ -100,6 +108,9 @@
     <div class="badge">⭐ BESTSELLER — 28-MODULE CPA TRAINING</div>
     <h1>Learn CPA Marketing<br><span class="hl">From Zero to Advanced</span></h1>
     <p class="sub">The complete <b>CPA Advanced Master Course</b> as an instant-download PDF guide — from CPA fundamentals to offer research, landing pages, Facebook marketing, tracking, retargeting and scaling. Step by step, fully practical.</p>
+    <div class="hero-cover">
+      <img src="cover.jpg" alt="CPA Advanced Master Course — complete 28-module PDF guide" />
+    </div>
     <div class="buy-wrap">
       <a href="https://www.jvzoo.com/b/0/458063/1"><img src="https://i.jvzoo.com/0/458063/1" alt="CPA Advanced Master Course" border="0" /></a>
       <div class="secure-line">🔒 Secure checkout via JVZoo · Instant PDF download · 30-day money-back guarantee</div>
@@ -157,6 +168,24 @@
       <ul><li>Facebook Marketing</li><li>Facebook Ads</li><li>Paid Traffic Basics</li><li>Tracking &amp; Analytics</li><li>CRO &amp; A/B Testing</li><li>Retargeting Funnel</li><li>Campaign Optimization</li></ul></div>
     <div class="phase"><span class="pnum">PHASE 04 — SCALE</span><h3>Scale &amp; Grow</h3><p class="pdesc">Find winners, scale them, and systematize your workflow</p>
       <ul><li>Scaling Strategies</li><li>Advanced Funnels</li><li>Email Marketing</li><li>Profitability Analysis</li><li>Automation Basics</li><li>Final Project</li><li>Next Steps</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Real Data, Real Tracking</div>
+    <h2 class="sec">Inside the <span class="hl">Dashboards</span></h2>
+    <p class="lead">The course teaches you to read and act on real campaign data — traffic sources, CTR, CPC, conversions and ROI — like the examples below.</p>
+    <div class="results-grid">
+      <figure class="result-shot">
+        <img src="result1.png" alt="Sample traffic analytics dashboard" />
+        <figcaption>Sample traffic dashboard — learn to read these metrics</figcaption>
+      </figure>
+      <figure class="result-shot">
+        <img src="result2.png" alt="Sample campaign analytics dashboard" />
+        <figcaption>Campaign analytics example — tracking &amp; optimization in practice</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
