@@ -33,14 +33,6 @@
   .stat b { display:block; font-size:32px; background:linear-gradient(135deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
   .stat span { font-size:14px; color:var(--muted); }
 
-  .hero-cover { margin:30px auto 6px; max-width:400px; }
-  .hero-cover img { width:100%; height:auto; border-radius:18px; display:block;
-    box-shadow:0 24px 70px rgba(0,0,0,.55), 0 0 0 1px rgba(245,179,1,.35), 0 0 60px rgba(245,179,1,.18); }
-  .results-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; max-width:900px; margin:0 auto; }
-  .result-shot { background:linear-gradient(160deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:16px; padding:14px; }
-  .result-shot img { width:100%; height:auto; border-radius:10px; display:block; }
-  .result-shot figcaption { text-align:center; color:var(--muted); font-size:13px; margin-top:10px; }
-
   section { padding:70px 0; }
   section.alt { background:linear-gradient(180deg,var(--bg2),#0a0f28); }
   .eyebrow { text-align:center; color:var(--gold); font-weight:700; font-size:13px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px; }
@@ -95,9 +87,23 @@
   footer .jvzoo-disclaimer { max-width:860px; margin:0 auto 20px; padding:0 20px; color:#8f9ccb; font-size:14px; line-height:1.8; text-align:left; }
   footer .copy { text-align:center; color:#6f7aa5; font-size:13px; }
 
+  .hero-cover { margin:26px auto 0; max-width:380px; }
+  .hero-cover img { width:100%; border-radius:18px; box-shadow:0 24px 70px rgba(0,0,0,.55), 0 0 46px rgba(245,179,1,.22); border:2px solid rgba(245,179,1,.5); display:block; }
+
+  .result-block { max-width:880px; margin:0 auto 48px; }
+  .result-block:last-of-type { margin-bottom:8px; }
+  .stat-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:18px; }
+  .stat-card { background:linear-gradient(160deg,#101a3d,#0b1229); border:1px solid var(--line); border-radius:16px; padding:18px 30px; text-align:center; min-width:190px; box-shadow:0 8px 28px rgba(0,0,0,.35); }
+  .stat-card .num { display:block; font-size:34px; font-weight:800; background:linear-gradient(135deg,#ffd166,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; line-height:1.2; }
+  .stat-card .lbl { font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; }
+  .shot { border:2px solid var(--line); border-radius:20px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.5); background:#0b1229; }
+  .shot img { width:100%; display:block; }
+  .shot-note { text-align:center; color:var(--muted); font-size:13px; margin-top:12px; }
+  .results-disclaimer { max-width:760px; margin:26px auto 0; text-align:center; color:#8f9ccb; font-size:13px; line-height:1.7; background:rgba(16,26,61,.55); border:1px solid var(--line); border-radius:14px; padding:16px 22px; }
+
   @media(max-width:640px){
     header.hero h1{font-size:32px} h2.sec{font-size:27px} .price-card .now{font-size:46px}
-    section{padding:52px 0} .hero-cover{max-width:300px}
+    section{padding:52px 0}
   }
 </style>
 </head>
@@ -109,7 +115,7 @@
     <h1>Learn CPA Marketing<br><span class="hl">From Zero to Advanced</span></h1>
     <p class="sub">The complete <b>CPA Advanced Master Course</b> as an instant-download PDF guide — from CPA fundamentals to offer research, landing pages, Facebook marketing, tracking, retargeting and scaling. Step by step, fully practical.</p>
     <div class="hero-cover">
-      <img src="cover.jpg" alt="CPA Advanced Master Course — complete 28-module PDF guide" />
+      <img src="cover.jpg" alt="CPA Advanced Master Course — complete 28-module guide" />
     </div>
     <div class="buy-wrap">
       <a href="https://www.jvzoo.com/b/0/458063/1"><img src="https://i.jvzoo.com/0/458063/1" alt="CPA Advanced Master Course" border="0" /></a>
@@ -173,18 +179,36 @@
 
 <section>
   <div class="wrap">
-    <div class="eyebrow">Real Data, Real Tracking</div>
-    <h2 class="sec">Inside the <span class="hl">Dashboards</span></h2>
-    <p class="lead">The course teaches you to read and act on real campaign data — traffic sources, CTR, CPC, conversions and ROI — like the examples below.</p>
-    <div class="results-grid">
-      <figure class="result-shot">
-        <img src="result1.png" alt="Sample traffic analytics dashboard" />
-        <figcaption>Sample traffic dashboard — learn to read these metrics</figcaption>
-      </figure>
-      <figure class="result-shot">
-        <img src="result2.png" alt="Sample campaign analytics dashboard" />
-        <figcaption>Campaign analytics example — tracking &amp; optimization in practice</figcaption>
-      </figure>
+    <div class="eyebrow">Real Campaign Dashboards</div>
+    <h2 class="sec">📊 Campaign <span class="hl">Results</span></h2>
+    <p class="lead">Real campaign dashboard screenshots — actual traffic, conversions and revenue data from CPA campaigns.</p>
+
+    <div class="result-block">
+      <div class="stat-row">
+        <div class="stat-card"><span class="num">$8,076.61</span><span class="lbl">💰 Revenue</span></div>
+        <div class="stat-card"><span class="num">37,922</span><span class="lbl">🖱️ Clicks</span></div>
+        <div class="stat-card"><span class="num">315</span><span class="lbl">🎯 Conversions</span></div>
+      </div>
+      <div class="shot">
+        <img src="result1.png" alt="CPA campaign dashboard — $8,076.61 revenue, 37,922 clicks, 315 conversions" />
+      </div>
+      <p class="shot-note">Real campaign dashboard screenshot · Jan 16 – Jan 31 period</p>
+    </div>
+
+    <div class="result-block">
+      <div class="stat-row">
+        <div class="stat-card"><span class="num">$11,437.93</span><span class="lbl">💰 Revenue</span></div>
+        <div class="stat-card"><span class="num">74,672</span><span class="lbl">🖱️ Clicks</span></div>
+        <div class="stat-card"><span class="num">459</span><span class="lbl">🎯 Conversions</span></div>
+      </div>
+      <div class="shot">
+        <img src="result2.png" alt="CPA campaign dashboard — $11,437.93 revenue, 74,672 clicks, 459 conversions" />
+      </div>
+      <p class="shot-note">Real campaign dashboard screenshot · Mar 1 – Mar 15 period</p>
+    </div>
+
+    <div class="results-disclaimer">
+      <b>Important:</b> These screenshots show real campaign data from past CPA campaigns. They are shown as examples of the type of dashboard data covered in the course — they do not guarantee you will earn the same amounts. Your results depend on your execution, traffic costs, offers, GEOs, and platform rules.
     </div>
   </div>
 </section>
